@@ -1,7 +1,106 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>henry0315</title>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Pretendard Variable', sans-serif;
+      background: url('images/background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(10px);
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 40px 40px 20px 40px;
+      width: 90%;
+      max-width: 500px;
+      text-align: center;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      width: 120px;
+      height: 120px;
+      margin-bottom: 20px;
+      border-radius: 50%;
+    }
+
+h1 {
+  font-size: 28px;
+  margin-top: -20px;
+  margin-bottom: 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid white;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards;
+}
+
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    p {
+      font-size: 16px;
+      margin: 10px 0;
+      color: #eeeeee;
+    }
+
+    .button {
+      display: inline-block;
+      margin: 6px;
+      padding: 12px 30px;
+      background: #ffffff;
+      border: none;
+      border-radius: 30px;
+      color: #000;
+      font-weight: bold;
+      font-size: 14px;
+      text-decoration: none;
+      transition: 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+      background: #f0f0f0;
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <div class="overlay">
+    <div class="card">
+      <img src="images/Profile.png" alt="Profile" />
+      <h1>Hi there! I'm henry0315</h1>
+      <p><strong>My favorite activity:</strong> Coding, Made program</p>
+      <p><strong>My favorite song:</strong> <a href="https://open.spotify.com/track/6RBziRcDeiho3iTPdtEeg9?si=dfd26ac299184bc5">사건의 지평선</a></p>
+      <a href="https://github.com/HJenry9193" class="button">Github</a>
+      <a href="https://blog.naver.com/henry031503" class="button">Blog</a>
+      <p style="margin-top: 10px; font-size: 12px; color: #cccccc; text-align: right;">Made by henry0315</p>
+    </div>
+  </div>
 </body>
 </html>
