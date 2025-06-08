@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>henry0315</title>
@@ -47,16 +48,16 @@
       border-radius: 50%;
     }
 
-h1 {
-  font-size: 28px;
-  margin-top: -20px;
-  margin-bottom: 0px;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 2px solid white;
-  width: 0;
-  animation: typing 3s steps(30, end) forwards;
-}
+  h1 {
+    font-size: 28px;
+    margin-top: -20px;
+    margin-bottom: 0px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid white;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards;
+  }
 
 
     @keyframes typing {
@@ -70,24 +71,30 @@ h1 {
       color: #eeeeee;
     }
 
-    .button {
-      display: inline-block;
-      margin: 6px;
-      padding: 12px 30px;
-      background: #ffffff;
-      border: none;
-      border-radius: 30px;
-      color: #000;
-      font-weight: bold;
-      font-size: 14px;
-      text-decoration: none;
-      transition: 0.3s ease, transform 0.3s ease;
-    }
+  .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    margin: 6px;
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 50%;
+    color: #000;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s ease, transform 0.3s ease;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
 
-    .button:hover {
-      background: #f0f0f0;
-      transform: translateY(-5px);
-    }
+  .button:hover {
+    background: rgba(255, 255, 255, 1.0);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+  }
+
   </style>
 </head>
 <body>
@@ -97,8 +104,15 @@ h1 {
       <h1>Hi there! I'm henry0315</h1>
       <p><strong>My favorite activity:</strong> Coding, Made program</p>
       <p><strong>My favorite song:</strong> <a href="https://open.spotify.com/track/6RBziRcDeiho3iTPdtEeg9?si=dfd26ac299184bc5">사건의 지평선</a></p>
-      <a href="https://github.com/HJenry9193" class="button">Github</a>
-      <a href="https://blog.naver.com/henry031503" class="button">Blog</a>
+      <a href="http://github.com/HJenry9193" class="button" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="http://blog.naver.com" class="button" title="Blog">
+        <i class="fas fa-blog"></i>
+      </a>
+      <a href="http://discord.com/users/1064078529261731870" class="button" title="Discord">
+        <i class="fa-brands fa-discord"></i>
+      </a>
       <p style="margin-top: 10px; font-size: 12px; color: #cccccc; text-align: right;">Made by henry0315</p>
     </div>
   </div>
