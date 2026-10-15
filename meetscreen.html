@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeetScreen 확장 프로그램 설치 가이드</title>
+    <style>
+        :root {
+            --primary-color: #1a73e8;
+            --bg-color: #f8f9fa;
+            --text-color: #3c4043;
+            --border-color: #dadce0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 600px;
+            width: 100%;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05), 0 1px 3px rgba(0,0,0,0.1);
+            border: 1px solid var(--border-color);
+        }
+        h1 {
+            font-size: 24px;
+            color: #202124;
+            margin-top: 0;
+            margin-bottom: 24px;
+            text-align: center;
+            font-weight: 600;
+        }
+        ol {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        li {
+            position: relative;
+            padding-left: 50px;
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+        li::before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            position: absolute;
+            left: 0;
+            top: 2px;
+            width: 32px;
+            height: 32px;
+            background-color: #e8f0fe;
+            color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        ol {
+            counter-reset: step-counter;
+        }
+        .download-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 500;
+            margin-top: 8px;
+            transition: background-color 0.2s;
+        }
+        .download-btn:hover {
+            background-color: #1557b0;
+        }
+        .code-tag {
+            background-color: #f1f3f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, monospace;
+            font-size: 14px;
+            color: #c7254e;
+        }
+        .shortcut {
+            background-color: #f1f3f4;
+            border: 1px solid var(--border-color);
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 14px;
+            box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        }
+        .highlight {
+            font-weight: bold;
+            color: #202124;
+        }
+        .end-step {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: var(--primary-color);
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px dashed var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>MeetScreen 설치 가이드</h1>
+    <ol>
+        <li>
+            <span class="highlight">zip 파일을 다운받고 압축을 푸세요.</span><br>
+            <!-- # 자리에 실제 다운로드 링크를 넣으세요 -->
+            <a href="https://hjenry9193.github.io/MeetScreen.zip" class="download-btn">MeetScreen.zip 다운로드</a>
+        </li>
+        <li>크롬 <span class="highlight">확장 프로그램 관리</span>에 들어가세요.<br><small style="color: #70757a;">(주소창에 <span class="code-tag">chrome://extensions/</span> 입력 가능)</small></li>
+        <li>우측 상단의 <span class="highlight">개발자 모드</span>를 켜세요.</li>
+        <li>왼쪽 상단의 <span class="highlight">압축 해제된 확장프로그램 로드</span>를 누르세요.</li>
+        <li>압축을 해제한 <span class="highlight">MeetScreen 폴더</span>를 선택하세요.</li>
+        <li>구글 미트에 들어가서 공유된 화면을 <span class="highlight">더블클릭</span>하거나 단축키 <span class="shortcut">Ctrl</span> + <span class="shortcut">Shift</span> + <span class="shortcut">F</span>를 누르세요.</li>
+    </ol>
+    <div class="end-step">🎉 끝! 설치가 완료되었습니다.</div>
+</div>
+
+</body>
+</html>
